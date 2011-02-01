@@ -1,0 +1,18 @@
+body {
+  background-color: white;
+  font: 12pt verdana, sans-serif;
+}
+
+.author {
+  text-align: right;
+}
+
+.site {
+  text-align: justify;
+  width: 42em;
+  margin: 3em auto 2em auto;
+}
+
+.title {
+  text-align: center;
+}
