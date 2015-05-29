@@ -1,0 +1,12 @@
+#Organize Import Order
+#Wed Jan 28 12:51:52 CET 2015
+9=\#com.neotechnology
+8=\#org.neo4j
+7=\#javax
+6=\#java
+5=\#
+4=com.neotechnology
+3=org.neo4j
+2=javax
+1=java
+0=
