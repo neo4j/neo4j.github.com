@@ -6,6 +6,46 @@ title: Neo4j github resources
 <h2>Style guides</h2>
 
 <ul class="posts">
-  <li><a href="/code-style/neo4j-eclipse.xml">Eclipse formatting template</a></li>
-  <li><a href="/code-style/neo4j-intellij-settings.jar">IntelliJ formatting template</a></li>
+  <li><a href="code-style/neo4j-eclipse.xml">Eclipse formatting template</a></li>
+  <li><a href="code-style/neo4j-intellij.xml">IntelliJ formatting template</a></li>
 </ul>
+
+<h2>
+Reformatting guidelines
+</h2>
+
+<p>
+In general it should be regarded as bad form to reformat code which is not strictly part of a code change.
+This is not a strict rule as such, but using auto-reformatting of entire files leads to more problems than it solves.
+Sometimes it is however good to sneak in some obvious cleanup together with other changes.
+<p>
+Luckily IntelliJ has support for reformatting only code you have touched.
+The option is called "Only VCS changed text" and it is available in the reformatting dialogue.
+It is by default accessed by pressing shift-alt-cmd-L and it is recommended that you exclusively use this mode if you want to make use of auto-reformatting.
+There is also a way of doing the same when checking in code using IntelliJ.
+
+<p>
+<img src="code-style/intellij-reformat-file.png">
+
+<p>
+If you use another editor then try to find similar functionality.
+
+<h2>
+Code style guidelines
+</h2>
+Code styles are nice and we should try to keep generally aligned.
+However if you feel that some code should be justifiable formatted a bit differently then feel free.
+Likewise if you stumble upon code that is justifiably formatted in a different way then try to keep it like that.
+
+<p>
+You can also adjust your local copy of the code style with changes that make sense for you but which do not generally affect others.
+Some examples are whether or not you want your code to wrap automatically when you go outside the margin as you type.
+Another example could be whether or not you want to keep the formatting of line breaks when you do an automatic reformatting.
+IntelliJ is to some extent mixing policy with mechanism here.
+
+<h2>
+End of file
+</h2>
+For some reason dating back to who knows when new lines are required at the end of files.
+This is not part of the code style in IntelliJ so it is recommended to enable this manually.
+It is called "Ensure line feed at file end on Save".
