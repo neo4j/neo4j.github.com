@@ -24,6 +24,12 @@
   <JavaCodeStyleSettings>
     <option name="CLASS_NAMES_IN_JAVADOC" value="3" />
   </JavaCodeStyleSettings>
+  <ScalaCodeStyleSettings>
+    <option name="FINALLY_BRACE_FORCE" value="3" />
+    <option name="TRY_BRACE_FORCE" value="3" />
+    <option name="ALIGN_EXTENDS_WITH" value="3" />
+    <option name="BLANK_LINES_AROUND_METHOD_IN_INNER_SCOPES" value="0" />
+  </ScalaCodeStyleSettings>
   <XML>
     <option name="XML_LEGACY_SETTINGS_IMPORTED" value="true" />
   </XML>
@@ -76,6 +82,16 @@
     <option name="FOR_BRACE_FORCE" value="3" />
     <option name="SPACE_WITHIN_ANNOTATION_PARENTHESES" value="true" />
     <option name="ENUM_CONSTANTS_WRAP" value="2" />
+  </codeStyleSettings>
+  <codeStyleSettings language="Scala">
+    <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
+    <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+    <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="1" />
+    <option name="METHOD_PARAMETERS_WRAP" value="5" />
+    <option name="IF_BRACE_FORCE" value="1" />
+    <arrangement>
+      <groups />
+    </arrangement>
   </codeStyleSettings>
   <codeStyleSettings language="kotlin">
     <option name="KEEP_LINE_BREAKS" value="false" />
