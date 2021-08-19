@@ -51,4 +51,30 @@ End of file
 </h2>
 For some reason dating back to who knows when new lines are required at the end of files.
 This is not part of the code style in IntelliJ so it is recommended to enable this manually.
-It is called "Ensure line feed at file end on Save".
+In the Preferences>Editor>General tab there is an "On Save" section with an option "Ensure every saved file ends with a line break".
+
+<h2>
+build-resources Maven Plugin
+</h2>
+
+<p>
+Some Neo4j Maven tasks require a Neo4j-specific maven plugin. The code for the plugin is included in the main repository.
+The plugin can be installed manually by running:
+<code>mvn install  -pl  org.neo4j.build:build-resources</code>
+Alternatively IntelliJ can be configured to install the plugin before a build or rebuild operation using the <a href="code-style/intellij-build-resources-install-before-build.png">Maven tool window</a>.
+</p>
+
+<h2>
+Javacc Cypher Compiler
+</h2>
+
+<p>
+Cypher uses JavaCC (<a href="https://javacc.github.io/javacc/">Java Compiler Compiler</a>) to generate Java code. The generated code is necessary to build Neo4j and it is not cheked in to source control.
+To build Neo4j you have to generate the code locally. IntelliJ IDEA does not do this automatically out of the box.
+There are three main ways to run javacc:
+<ol>
+<li>Maven command line: <code>mvn compile -am -pl public/community/cypher/front-end/javacc-parser</code></li>
+<li>Run the IntelliJ Maven menu command "Generate Sources and Update Folders"</li>
+<li>Configure IntelliJ to run the ph-javacc Maven plugin before each build or rebuild operation using the <a href="code-style/intellij-javacc-plugin-before-build.png">Maven tool window</a></li>
+</ol>
+</p>
