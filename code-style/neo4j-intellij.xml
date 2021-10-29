@@ -28,6 +28,17 @@
     <option name="classCountToUseImportOnDemand" value="5000" />
     <option name="collectImports" value="false" />
     <option name="doNotChangeLocalImportsOnOptimize" value="false" />
+    <option name="importLayout">
+      <array>
+        <option value="base package imports" />
+        <option value="_______ blank line _______" />
+        <option value="all other imports" />
+        <option value="_______ blank line _______" />
+        <option value="java" />
+        <option value="javax" />
+        <option value="scala" />
+      </array>
+    </option>
     <option name="FINALLY_BRACE_FORCE" value="3" />
     <option name="TRY_BRACE_FORCE" value="3" />
     <option name="ALIGN_EXTENDS_WITH" value="3" />
